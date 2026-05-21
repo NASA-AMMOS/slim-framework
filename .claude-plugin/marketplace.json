@@ -1,0 +1,12 @@
+{
+  "name": "best-practices-marketplace",
+  "owner": {
+    "name": "riverma",
+    "email": ""
+  },
+  "metadata": {
+    "description": "An AI-native marketplace of best practices.",
+    "version": "1.0.0"
+  },
+  "plugins": []
+}
