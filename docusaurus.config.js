@@ -15,7 +15,7 @@ const darkCodeTheme = themes.dracula;
 const config = {
   title: "Best Practices Marketplace",
   tagline: "An AI-native marketplace of best practices — discoverable and executable by AI agents.",
-  favicon: "/img/favicon.ico",
+  favicon: "/img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://riverma.github.io",
