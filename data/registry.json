@@ -1,0 +1,32 @@
+{
+  "marketplace": {
+    "name": "best-practices-marketplace",
+    "owner": {
+      "name": "NASA-AMMOS",
+      "email": ""
+    },
+    "metadata": {
+      "description": "An AI-native marketplace of best practices.",
+      "version": "1.0.0"
+    },
+    "source": "./static/marketplace"
+  },
+  "skills": [],
+  "agents": [],
+  "mcp": [],
+  "metadata": {
+    "categoryIcons": {
+      "collaboration": "🤝",
+      "collaboration/meetings": "📅",
+      "collaboration/policy": "🏛",
+      "collaboration/templates": "📄",
+      "collaboration/versioning": "🔄",
+      "continuous-pipelines": "⚡",
+      "continuous-pipelines/testing": "✅",
+      "documentation": "📝",
+      "infrastructure": "🏗",
+      "security": "🔒",
+      "user-interface": "🎨"
+    }
+  }
+}
