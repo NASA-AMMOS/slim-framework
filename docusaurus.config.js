@@ -18,12 +18,12 @@ const config = {
   favicon: "/img/favicon.svg",
 
   // Set the production url of your site here
-  url: "https://riverma.github.io",
+  url: "https://nasa-ammos.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/slim-framework/",
 
   // GitHub pages deployment config.
-  organizationName: "riverma",
+  organizationName: "nasa-ammos",
   projectName: "slim-framework",
 
   onBrokenLinks: "warn",
@@ -41,12 +41,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/riverma/slim-framework/tree/main/",
+          editUrl: "https://github.com/NASA-AMMOS/slim-framework/tree/main/",
           sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/riverma/slim-framework/tree/main/",
+          editUrl: "https://github.com/NASA-AMMOS/slim-framework/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -85,7 +85,7 @@ const config = {
             label: "About",
           },
           {
-            href: "https://github.com/riverma/slim-framework",
+            href: "https://github.com/NASA-AMMOS/slim-framework",
             label: "GitHub",
             position: "right",
           },
@@ -116,7 +116,7 @@ const config = {
             items: [
               {
                 label: "GitHub Discussions",
-                href: "https://github.com/riverma/slim-framework/discussions",
+                href: "https://github.com/NASA-AMMOS/slim-framework/discussions",
               },
             ],
           },
@@ -125,12 +125,12 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/riverma/slim-framework",
+                href: "https://github.com/NASA-AMMOS/slim-framework",
               },
             ],
           },
         ],
-        copyright: `Built with the <a href="https://github.com/riverma/slim-framework" style="color: cyan;">Best Practices Marketplace framework</a>.<br/>Copyright © ${new Date().getFullYear()}. Contents licensed under Apache License Version 2.0.<br/>`,
+        copyright: `Built with the <a href="https://github.com/NASA-AMMOS/slim-framework" style="color: cyan;">Best Practices Marketplace framework</a>.<br/>Copyright © ${new Date().getFullYear()}. Contents licensed under Apache License Version 2.0.<br/>`,
       },
       prism: {
         theme: lightCodeTheme,
