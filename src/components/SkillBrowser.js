@@ -282,9 +282,18 @@ const SkillCard = ({
       return "/plugin marketplace add [YOUR_REPO_PATH]";
     }
 
-    // For deployed sites, use dynamic GitHub command based on current deployment
+    // For deployed sites, use dynamic GitHub command based on current deployment.
+    // The trailing ".git" is required, not cosmetic: Claude Code first tries
+    // a bare URL as a hosted marketplace.json source. On github.com that
+    // request 404s and it falls back to git-cloning the URL. On GitHub
+    // Enterprise Server behind SSO, an unauthenticated fetch of a private
+    // repo URL can return HTTP 200 with the login page's HTML instead of a
+    // 404, which Claude Code can't fall back from — it tries to parse that
+    // HTML as the marketplace.json object and fails with "Invalid input:
+    // expected object, received string". A ".git" suffix makes the URL
+    // unambiguously a git source, skipping the JSON-fetch attempt entirely.
     const repoInfo = getRepositoryInfo();
-    return `/plugin marketplace add ${repoInfo.githubUrl}`;
+    return `/plugin marketplace add ${repoInfo.githubUrl}.git`;
   };
 
   // Generate command for manual installation
