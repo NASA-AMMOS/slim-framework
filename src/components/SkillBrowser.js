@@ -172,11 +172,14 @@ const SkillCard = ({
       };
     }
 
-    // Fallback for other deployments or localhost — derived from site config
+    // Fallback for other deployments or localhost — derived from site config.
+    // Uses siteConfig.url (not a hardcoded "github.com") so this resolves
+    // correctly on GitHub Enterprise Server hosts (e.g. github.mycompany.com),
+    // where repos don't live under github.com.
     return {
       organization: siteConfig.organizationName,
       project: siteConfig.projectName,
-      githubUrl: `https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`,
+      githubUrl: `${siteConfig.url}/${siteConfig.organizationName}/${siteConfig.projectName}`,
       baseUrl: baseUrl,
       assetsUrl: `${baseUrl}${siteConfig.baseUrl}assets/zip`,
     };
